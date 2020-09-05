@@ -1,0 +1,117 @@
+
+.red section.start-menu {
+  background-color: rgba(130, 0, 0, 0.8);
+}
+
+.red section.start-menu div.start-menu-container form.user-info {
+  background: rgb(130, 0, 0);
+}
+
+
+/* ######################################### */
+.red header.body-header h1 {
+  color: #913d88;
+}
+/* ######################################### */
+
+.red
+  main.sec-parent
+  div.container
+  section.user-card
+  div.user-card-sec-container
+  div.face {
+  background: rgb(130, 0, 0);
+}
+
+/* ######################################### */
+.red
+  main.sec-parent
+  div.container
+  section.add-task
+  div.add-task-sec-container
+  input {
+  box-shadow: inset 0px 0px 0px 100px rgb(130, 0, 0);
+}
+
+.red
+  main.sec-parent
+  div.container
+  section.add-task
+  div.add-task-sec-container
+  input:focus {
+  box-shadow: inset 0px 0px 0px 5px rgb(130, 0, 0);
+  color: #913d88;
+}
+
+.red
+  main.sec-parent
+  div.container
+  section.add-task
+  div.add-task-sec-container
+  button {
+  box-shadow: inset 0px 0px 0px 100px rgb(130, 0, 0);
+}
+
+.red
+  main.sec-parent
+  div.container
+  section.add-task
+  div.add-task-sec-container
+  button:hover {
+  box-shadow: inset 0px 0px 0px 5px rgb(130, 0, 0);
+  color: #913d88;
+}
+
+/* ######################################### */
+
+.red .taska {
+  box-shadow: inset 0px 0px 0px 5px rgb(130, 0, 0);
+  color: #913d88;
+}
+
+.red .taska span {
+  box-shadow: inset 0px 0px 0px 5px rgb(130, 0, 0);
+  color: #913d88;
+}
+
+.red .taska span:hover{
+  background: #913d88;
+
+}
+
+.red div.tasks-sec-container button {
+  box-shadow: inset 0px 0px 0px 100px rgb(130, 0, 0);
+}
+
+.red div.tasks-sec-container button:hover {
+  box-shadow: inset 0px 0px 0px 5px rgb(130, 0, 0);
+  color: #913d88;
+}
+
+/* ######################################### */
+
+.red section.phone-add {
+  background-color: rgba(130, 0, 0, 0.8);
+}
+
+.red section.phone-add div.phone-add-container input{
+background: rgb(130, 0, 0);
+}
+
+/* ######################################### */
+
+
+@media only screen and (max-width: 800px) {
+
+  .red button.phone-btn{
+    background: rgb(130, 0, 0);
+  }
+  .red button.phone-btn:hover{
+    background: rgba(130, 0, 0, 0.8);
+  }
+
+  .red .taska{
+    color: #913d88;
+  }
+
+}

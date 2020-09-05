@@ -1,0 +1,124 @@
+.dark{
+    background: #161616;
+}
+
+.dark section.start-menu {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .dark section.start-menu div.start-menu-container form.user-info {
+    background: #AAA;
+  }
+  
+  
+  /* ######################################### */
+  .dark header.body-header h1 {
+    color: #aaaaaa;
+  }
+  /* ######################################### */
+  
+  .dark
+    main.sec-parent
+    div.container
+    section.user-card
+    div.user-card-sec-container
+    div.face {
+      color: #161616;
+    background: #AAA;
+  }
+  
+  /* ######################################### */
+  
+  .dark
+    main.sec-parent
+    div.container
+    section.add-task
+    div.add-task-sec-container
+    input {
+    box-shadow: inset 0px 0px 0px 100px #AAA;
+  }
+  
+  .dark
+    main.sec-parent
+    div.container
+    section.add-task
+    div.add-task-sec-container
+    input:focus {
+    box-shadow: inset 0px 0px 0px 5px #AAA;
+    color: #161616;
+  }
+  
+  .dark
+    main.sec-parent
+    div.container
+    section.add-task
+    div.add-task-sec-container
+    button {
+    box-shadow: inset 0px 0px 0px 100px #AAA;
+  }
+  
+  .dark
+    main.sec-parent
+    div.container
+    section.add-task
+    div.add-task-sec-container
+    button:hover {
+    box-shadow: inset 0px 0px 0px 5px #AAA;
+    color: #161616;
+  }
+  
+  /* ######################################### */
+  
+  .dark .taska {
+    box-shadow: inset 0px 0px 0px 5px #AAA;
+    color: #aaaaaa;
+  }
+  
+  .dark .taska span {
+    box-shadow: inset 0px 0px 0px 5px #AAA;
+    color: #AAA;
+  }
+  
+  .dark .taska span:hover{
+    background: #AAA;
+  }
+  
+  .dark div.tasks-sec-container button {
+    box-shadow: inset 0px 0px 0px 100px #AAA;
+  }
+  
+  .dark div.tasks-sec-container button:hover {
+    box-shadow: inset 0px 0px 0px 5px #AAA;
+    color: #161616;
+  }
+  
+  /* ######################################### */
+  
+  .dark section.phone-add {
+    background-color: #f6f6f6;
+    color: #161616;
+  
+  }
+  
+  .dark section.phone-add div.phone-add-container input{
+  background: #aaaaaa;
+  }
+  
+  /* ######################################### */
+  
+  
+  @media only screen and (max-width: 800px) {
+  
+    .dark button.phone-btn{
+      color: #161616;
+      background: #AAA;
+    }
+    .dark button.phone-btn:hover{
+      background: rgba(170, 170, 170, 0.801);
+    }
+  
+    .dark .taska{
+      color: #aaaaaa;
+    }
+  
+  }

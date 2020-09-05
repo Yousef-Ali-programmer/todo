@@ -1,0 +1,120 @@
+
+body.purple section.start-menu {
+  background-color: #913d89e0;
+}
+
+body.purple section.start-menu div.start-menu-container form.user-info {
+  background: rgb(131, 58, 180);
+}
+
+
+/* ######################################### */
+body.purple header.body-header h1 {
+  color: #820000;
+}
+/* ######################################### */
+
+body.purple
+  main.sec-parent
+  div.container
+  section.user-card
+  div.user-card-sec-container
+  div.face {
+  background: #913d88;
+
+}
+
+/* ######################################### */
+
+body.purple
+  main.sec-parent
+  div.container
+  section.add-task
+  div.add-task-sec-container
+  input {
+  box-shadow: inset 0px 0px 0px 100px #913d88;
+}
+
+body.purple
+  main.sec-parent
+  div.container
+  section.add-task
+  div.add-task-sec-container
+  input:focus {
+  box-shadow: inset 0px 0px 0px 5px #913d88;
+  color: #820000;
+}
+
+body.purple
+  main.sec-parent
+  div.container
+  section.add-task
+  div.add-task-sec-container
+  button {
+  box-shadow: inset 0px 0px 0px 100px #913d88;
+}
+
+body.purple
+  main.sec-parent
+  div.container
+  section.add-task
+  div.add-task-sec-container
+  button:hover {
+  box-shadow: inset 0px 0px 0px 5px #913d88;
+  color: #820000;
+}
+
+/* ######################################### */
+
+body.purple .taska {
+  box-shadow: inset 0px 0px 0px 5px #913d88;
+  color: #820000;
+}
+
+body.purple .taska span {
+  box-shadow: inset 0px 0px 0px 5px #913d88;
+  color: #820000;
+}
+
+body.purple .taska span:hover{
+  background: #820000;
+  color: #f6f6f6;
+}
+
+body.purple div.tasks-sec-container button {
+  box-shadow: inset 0px 0px 0px 100px #913d88;
+}
+
+body.purple div.tasks-sec-container button:hover {
+  box-shadow: inset 0px 0px 0px 5px #913d88;
+  color: #820000;
+}
+
+/* ######################################### */
+
+body.purple section.phone-add {
+  background-color: #913d89cc;
+
+}
+
+body.purple section.phone-add div.phone-add-container input{
+background: #820000;
+}
+
+/* ######################################### */
+
+
+@media only screen and (max-width: 800px) {
+
+  body.purple button.phone-btn{
+    background: #913d88;
+  }
+  body.purple button.phone-btn:hover{
+    background: #913d89d2;
+  }
+
+  body.purple .taska{
+    color: #820000;
+  }
+
+}

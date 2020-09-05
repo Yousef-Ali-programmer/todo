@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./CSS/main.css" />
+  <link rel="stylesheet" href="./CSS/bright.css">
+  <link rel="stylesheet" href="./CSS/purple.css">
+  <link rel="stylesheet" href="./CSS/red.css" />
+  <link rel="stylesheet" href="./CSS/dark.css">
+  <link rel="stylesheet" href="./CSS/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet" />
+
+  <title>Yousef To Do list Project</title>
+  <script src="https://kit.fontawesome.com/f4bd207837.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="purple">
+
+  <section class=" start-menu">
+    <div class="start-menu-container">
+      <form action="" class="user-info">
+        <label for="user-name">Type Your Name please:</label>
+
+        <input type="text" name="username" id="user-name" max="80" />
+        <hr />
+        <label for="user-age">How Old Are You?</label>
+        <input type="number" id="user-age" min="7" max="112" />
+        <hr />
+        <label for="gendar">What Is Your gendar</label>
+        <select id="gendar">
+          <option>Female</option>
+          <option>Male</option>
+        </select>
+        <hr />
+        <label for="fav-theme">Tell me Your favorite Theme</label>
+        <select id="fav-theme">
+          <option value="purple">Shades Of Purple(defult)</option>
+          <option value="red">Shades OF Red</option>
+          <option value="dark">Dark</option>
+          <option value="bright">brightness</option>
+        </select>
+        <hr />
+        <span id="start-btn">NOW DO YOUR TO DO!</span>
+      </form>
+    </div>
+  </section>
+
+  <section class="phone-add" id="phone-add-sec">
+    <div class="phone-add-container">
+      <label for="phone-task">Type Task Text</label>
+      <input type="text" id="phone-task" maxlength="35">
+      <button id="add-btn-phone">ADD!</button>
+    </div>
+  </section>
+
+  <header class="body-header">
+    <h1>DO YOUR TODO!</h1>
+    <hr />
+  </header>
+
+  <main class="sec-parent">
+    <div class="container">
+      <section class="main-sec user-card">
+        <div class="user-card-sec-container">
+          <div class="face front">
+            <span id="user-card-name">USER NAME</span>
+          </div>
+          <div class="face back">
+            <ul class="user-info">
+              <li class="user-info-lists">User Name: <span id="back-user-name-card"></span></li>
+              <li class="user-info-lists">User Age: <span id="back-user-age-card"></span></li>
+              <li class="user-info-lists">User gendar: <span id="back-user-type-card"></span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <button id="phone-add-btn" class="phone-btn">ADD A NEW TASK!</button>
+
+      <section class="main-sec add-task">
+        <div class="add-task-sec-container">
+          <input type="text" name="task-input" id="input-task" maxlength="35" />
+          <button type="button" id="add-btn"><i class="fa fa-plus"></i></button>
+        </div>
+      </section>
+
+      <section class="main-sec tasks">
+        <div class="tasks-sec-container">
+          <div class="taska-container" id="task-container">
+
+            <!-- <div class="taska">
+              <p class="task-text">TRY TEXT</p>
+              <span><i class="fa fa-times"></i></span>
+            </div> -->
+
+          </div>
+
+          <button id="remove-all-btn"><i class="fa fa-times"></i></button>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script src="./JS/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,491 @@
+/* rgb(58, 70, 180);#913D88 #820000   transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Caveat", cursive;
+  }
+  
+  html {
+    font-size: 10px;
+  }
+  
+  body {
+    background: #f6f6f6;
+    height: 100vh;
+  }
+  
+  hr {
+    margin: 2.5%;
+    color: #f6f6f6;
+  }
+  
+  li,
+  a,
+  button,
+  input {
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    border: none;
+    background-color: none;
+  }
+  
+  input:focus {
+    border: none;
+    outline: none;
+  }
+  
+  .container {
+    margin: auto;
+    width: 90%;
+  }
+  
+  button.phone-btn{
+    display: none
+    ;
+  }
+  
+  /* ######################################### */
+  
+  body section.start-menu {
+    z-index: 333333;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+  
+  body section.start-menu div.start-menu-container {
+    width: 66.666666%;
+    margin: auto;
+    padding: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  body section.start-menu div.start-menu-container form.user-info {
+    display: flex;
+    flex-direction: column;
+    padding: 7.25%;
+    margin: auto;
+    border-radius: 10%;
+  }
+  
+  body section.start-menu div.start-menu-container form.user-info label {
+    font-size: 2.5rem;
+    margin-top: 5%;
+  }
+  
+  body section.start-menu div.start-menu-container form.user-info input,
+  body section.start-menu div.start-menu-container form.user-info select,
+  body section.start-menu div.start-menu-container form.user-info option,
+  body section.start-menu div.start-menu-container form.user-info span {
+    padding: 2.25%;
+    margin: 1.25%;
+    transition: all 0.2s ease-in;
+    font-family: inherit;
+    font-weight: bold;
+  }
+  
+  body
+    section.start-menu
+    div.start-menu-container
+    form.user-info
+    input:focus {
+    box-shadow: 0px 0px 10px 1px rgb(231, 131, 131);
+  }
+  
+  body section.start-menu div.start-menu-container form.user-info span {
+    font-size: 2rem;
+    text-align: center;
+    padding: 2.5%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(231, 131, 131);
+    border-radius: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  body
+    section.start-menu
+    div.start-menu-container
+    form.user-info
+    span:active {
+    background-color: rgba(231, 131, 131, 0.5);
+  }
+  
+  /* ######################################### */
+  body header.body-header {
+    padding: 2.25%;
+  }
+  
+  body header.body-header h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  /* ######################################### */
+  
+  /* body main.sec-parent {
+  } */
+  
+  body main.sec-parent div.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "userCard addTask"
+      "userCard taska";
+  }
+  
+  /* ######################################### */
+  
+  body main.sec-parent div.container section.user-card {
+    grid-area: userCard;
+  }
+  
+  body
+    main.sec-parent
+    div.container
+    section.user-card
+    div.user-card-sec-container {
+    color: #f6f6f6;
+    min-height: 300px;
+    max-width: 200px;
+    margin: auto;
+    position: relative;
+    transition: all 1s cubic-bezier(0.86, 0, 0.07, 1);
+    transform-style: preserve-3d;
+  }
+  
+  body
+    main.sec-parent
+    div.container
+    section.user-card
+    div.user-card-sec-container
+    div.face {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+  }
+  
+  body
+    main.sec-parent
+    div.container
+    section.user-card
+    div.user-card-sec-container
+    div.front {
+    display: flex;
+    justify-content: center;
+  }
+  
+  body
+    main.sec-parent
+    div.container
+    section.user-card
+    div.user-card-sec-container
+    div.front
+    span {
+    align-self: center;
+    font-size: 2.5rem;
+  }
+  
+  body
+    main.sec-parent
+    div.container
+    section.user-card
+    div.user-card-sec-container
+    div.back {
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+  }
+  
+  body
+    main.sec-parent
+    div.container
+    section.user-card
+    div.user-card-sec-container
+    div.back
+    ul.user-info {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  body
+    main.sec-parent
+    div.container
+    section.user-card
+    div.user-card-sec-container
+    div.back
+    ul.user-info
+    li.user-info-lists {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.25rem;
+  }
+  
+  body
+    main.sec-parent
+    div.container
+    section.user-card
+    div.user-card-sec-container:hover {
+    transform: rotateY(180deg);
+  }
+  
+  /* ######################################### */
+  
+  body main.sec-parent div.container section.add-task {
+    grid-area: addTask;
+  }
+  
+  body
+    main.sec-parent
+    div.container
+    section.add-task
+    div.add-task-sec-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding-top: 2.5%;
+  }
+  
+  body
+    main.sec-parent
+    div.container
+    section.add-task
+    div.add-task-sec-container
+    input {
+    flex: 0.8;
+    padding: 2.5%;
+    border-radius: 15px;
+    margin-right: 5%;
+    transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    color: #f6f6f6;
+  }
+  
+  body
+    main.sec-parent
+    div.container
+    section.add-task
+    div.add-task-sec-container
+    input:focus {
+            font-size: 2.5rem;
+  }
+  
+  body
+    main.sec-parent
+    div.container
+    section.add-task
+    div.add-task-sec-container
+    button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 5%;
+    padding: 5%;
+    border-radius: 50%;
+    color: #f6f6f6;
+    transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  
+  body
+    main.sec-parent
+    div.container
+    section.add-task
+    div.add-task-sec-container
+    button:hover {
+    font-size: 2.5rem;
+    cursor: pointer;
+    transform: rotate(360deg);
+  }
+  
+  /* ######################################### */
+  
+  body main.sec-parent div.container section.tasks {
+    grid-area: taska;
+  }
+  
+  body
+    main.sec-parent
+    div.container
+    section.tasks
+    div.tasks-sec-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding-top: 2.5%;
+    height: 100%;
+  }
+  
+  body main.sec-parent div.container div.taska-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  body .taska {
+    border-radius: 30px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin: 1.25% 0%;
+  }
+  
+  body .taska p {
+    font-size: 2.5rem;
+    margin-left: 2.5%;
+  }
+  
+  body .taska span {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2.5rem;
+    transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    border-radius: inherit;
+  }
+  
+  body .taska span:hover{
+    padding: 3.75%;
+    font-size: 1.25rem;
+    color: #f6f6f6;
+    transform: rotate(360deg);
+  }
+  
+  body div.tasks-sec-container button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-right: 5%;
+    padding: 5%;
+    border-radius: 50%;
+    color: #f6f6f6;
+    transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    cursor: pointer;
+  }
+  
+  body div.tasks-sec-container button:hover {
+    font-size: 2.5rem;
+    transform: rotate(360deg);
+  }
+  
+  /* ######################################### */
+  
+  body section.phone-add {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    display: none;
+  }
+  
+  body section.phone-add div.phone-add-container{
+    margin: auto;
+    padding: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f6f6f6;
+    font-size: 2.5rem;
+    flex-direction: column;
+  }
+  
+  
+  body section.phone-add div.phone-add-container input{
+  padding: 2.5%;
+  border-radius: 20px;
+  font-size: 2.5rem;
+  color: #f6f6f6;
+  width: 90%;
+  }
+  
+  body section.phone-add div.phone-add-container button{
+    margin: 5%;
+    padding: 5%;
+    border-radius: 50%;
+    background: rgb(170, 170, 170);
+    cursor: pointer;
+  }
+  
+  body section.phone-add div.phone-add-container button:hover{
+    background: rgba(170, 170, 170, 0.801);
+  }
+  
+  /* ######################################### */
+  
+  
+  @media only screen and (max-width: 800px) {
+  
+    body main.sec-parent div.container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+      "userCard"
+      "addTask"
+      "taska";
+    }
+  
+    body section.add-task{
+      display: none;
+      grid-area: unset;
+    }
+  
+    body button.phone-btn{
+      grid-area: addTask;
+      display: flex;
+      color: #f6f6f6;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.25rem;
+      cursor: pointer;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      justify-self: center;
+      align-self: center;
+      transition: all .2s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+
+
+    body main.sec-parent div.container section.tasks div.tasks-sec-container{
+     flex-wrap: wrap;
+     justify-content: center;
+    }
+  
+    body .taska{
+      overflow: hidden;
+      border-radius: 10px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    body div.tasks-sec-container button {
+      display: flex;
+      color: #f6f6f6;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.25rem;
+      cursor: pointer;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      justify-self: center;
+      align-self: center;
+      transition: all .5s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  }
